@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="Stylesheet" href="style.css" >
+    <script src="script.js"></script>
+   
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="s1">Survey Form</h2>
+        <form class="surveyForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <!-- Add more countries here -->
+            </select>
+
+            <label>Gender:</label>
+            <label class="gender-label"><input type="checkbox" name="gender" value="Male"> Male</label>
+            <label class="gender-label"><input type="checkbox" name="gender" value="Female"> Female</label>
+            <label class="gender-label"><input type="checkbox" name="gender" value="Other"> Other</label>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" name="profession" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <div class="btn">
+                <button type="button" class="bottom" onclick="submitForm()">Submit</button>
+                <button type="reset" class="bottom">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>
